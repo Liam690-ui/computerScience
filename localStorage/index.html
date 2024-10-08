@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local storage lesson</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1 class="appHeading">Introduction to Local storage</h1>
+    <section class="app">
+      <div class="centerContainer">
+        <form id="userForm">
+          <div class="itemWrapper inputWrapper">
+            <label for="username">Enter your name:</label>
+            <input
+              type="text"
+              placeholder="enter text.."
+              id="username"
+              name="username"
+              required
+              class="inputBox"
+            />
+          </div>
+          <br />
+          <div class="itemWrapper inputWrapper">
+            <label for="email">Enter your email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="enter email.."
+              required
+              class="inputBox"
+            />
+          </div>
+          <br />
+          <div class="itemWrapper btnsWrapper">
+            <div class="itemWrapper btnsContainer">
+              <button id="enterBtn" type="submit" class="btn">Submit</button>
+              <button type="button" id="clearStorage" class="btn">
+                Clear Data
+              </button>
+            </div>
+          </div>
+        </form>
+        <p id="displayInfo">displayInfo</p>
+      </div>
+    </section>
+  </body>
+</html>
